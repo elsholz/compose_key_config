@@ -1,6 +1,6 @@
 pi: π
 rat: ℚ
-+-: ±
+pm: ±
 crs: ×
 imp: →
 or: ∨
@@ -29,12 +29,11 @@ sqrt: √
 gam: γ
 wn: ℤ
 exq: ∃
-^|: ↑
-'|v': ↓
+aup: ↑
+adown: ↓
 prop: φ
 om: Ω
 check: ✓
 del: Δ
 sig: σ
 SIG: Σ
-t: ∈
