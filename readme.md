@@ -36,7 +36,7 @@ In the following, key combinations and their result will be presented. The symbo
 | \<b\> \<e\> \<t\> | β | 
 | \<g\> \<a\> \<m\> | γ | 
 | \<l\> \<a\> \<m\> | λ | 
-| \<t\> \<e\> \<t\> |  | 
+| \<t\> \<e\> \<t\> | Θ | 
 | \<o\> \<m\> | Ω | 
 | \<d\> \<e\> \<l\> | Δ | 
 | \<s\> \<i\> \<g\> | σ | 

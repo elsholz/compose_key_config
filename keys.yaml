@@ -1,39 +1,56 @@
-pi: π
-rat: ℚ
-pm: ±
+# Marks
+check: ✓
 crs: ×
-imp: →
-or: ∨
-eqv: ↔
-bet: β
-and: ∧
-spr: ⊇
-tspr: ⊃
-al: α
-es: ∅
-fm: ⊥
-int: ∩
-ine: ∉
-lam: λ
+
+# Arrows
+aup: ↑
+adown: ↓
+
+# Number Letters
+nn: ℕ
+wn: ℤ
 real: ℝ
-tsub: ⊂
 cn: ℂ
+rat: ℚ
+
+# Greek Letters
+al: α
+bet: β
+gam: γ
+lam: λ
+tet: Θ
+om: Ω
+del: Δ
+sig: σ
+SIG: Σ
+pi: π
+
+# Symbols for Logic Class
+pm: ±
+sqrt: √
+exq: ∃
 vm: ⊤
 sub: ⊆
 ie: ∈
 fa: ∀
-nn: ℕ
 un: ∪
 not: ¬
-sqrt: √
-gam: γ
-wn: ℤ
-exq: ∃
-aup: ↑
-adown: ↓
+imp: →
+or: ∨
+eqv: ↔
+and: ∧
+spr: ⊇
+tspr: ⊃
+es: ∅
+fm: ⊥
+int: ∩
+ine: ∉
+tsub: ⊂
 prop: φ
-om: Ω
-check: ✓
-del: Δ
-sig: σ
-SIG: Σ
+
+# Emojis
+fire: 🔥
+joy: 😂
+glad: 😊
+cool: 😎
+hmmm: 🤔
