@@ -6,7 +6,7 @@ crs: ×
 aup: ↑
 adown: ↓
 
-# Number Letters
+# Number Symbols
 nn: ℕ
 wn: ℤ
 real: ℝ
@@ -17,13 +17,22 @@ rat: ℚ
 al: α
 bet: β
 gam: γ
+GAM: Γ
 lam: λ
-thet: Θ
-om: Ω
-del: Δ
+LAM: Λ
+thet: θ
+THET: Θ
+om: ω
+OM: Ω
+del: δ
+DEL: Δ
 sig: σ
 SIG: Σ
 pi: π
+PI: Π
+eps: Ɛ
+phi: φ
+PHI: Φ
 
 # Symbols for Logic Class
 pm: ±
@@ -54,3 +63,12 @@ joy: 😂
 glad: 😊
 cool: 😎
 hmmm: 🤔
+coff: ☕️﻿
+happ: 😊
+sad: 😞
+tux: 🐧
+monk: 🙈
+kit: 🐈
+dog: 🐕
+py: 🐍
+surp: 😲
