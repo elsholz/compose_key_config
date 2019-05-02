@@ -12,9 +12,6 @@ This will copy the config file to your home directory. If you made a config file
 #### List of Key Combinations
 In the following, key combinations and their result will be presented. The symbols are separated into categories that roughly match their use cases.
 
-|test1|test2|
-|---|---|
-|a<br><br>b|b|
 
 ### Marks
 |Combination|Result|
