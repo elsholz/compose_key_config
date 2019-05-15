@@ -1,0 +1,23 @@
+title: Symbols for Logic Class
+combos:
+  pm: ±
+  sqrt: √
+  exq: ∃
+  vm: ⊤
+  sub: ⊆
+  ie: ∈
+  fa: ∀
+  un: ∪
+  not: ¬
+  imp: →
+  or: ∨
+  eqv: ↔
+  and: ∧
+  spr: ⊇
+  tspr: ⊃
+  es: ∅
+  fm: ⊥
+  int: ∩
+  ine: ∉
+  tsub: ⊂
+  prop: φ

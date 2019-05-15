@@ -1,74 +1,12 @@
-# Marks
-check: ✓
-crs: ×
+# include other files recursively
+include:
+  - marks
+  - arrows
+  - number_symbols
+  - greek_letters
+  - logic_class
+  - emojis
 
-# Arrows
-aup: ↑
-adown: ↓
-
-# Number Symbols
-nn: ℕ
-wn: ℤ
-real: ℝ
-cn: ℂ
-rat: ℚ
-
-# Greek Letters
-al: α
-bet: β
-gam: γ
-GAM: Γ
-lam: λ
-LAM: Λ
-thet: θ
-THET: Θ
-om: ω
-OM: Ω
-del: δ
-DEL: Δ
-sig: σ
-SIG: Σ
-pi: π
-PI: Π
-eps: Ɛ
-phi: φ
-PHI: Φ
-
-# Symbols for Logic Class
-pm: ±
-sqrt: √
-exq: ∃
-vm: ⊤
-sub: ⊆
-ie: ∈
-fa: ∀
-un: ∪
-not: ¬
-imp: →
-or: ∨
-eqv: ↔
-and: ∧
-spr: ⊇
-tspr: ⊃
-es: ∅
-fm: ⊥
-int: ∩
-ine: ∉
-tsub: ⊂
-prop: φ
-
-# Emojis
-fire: 🔥
-joy: 😂
-glad: 😊
-cool: 😎
-hmmm: 🤔
-coff: ☕️﻿
-happ: 😊
-sad: 😞
-tux: 🐧
-monk: 🙈
-kit: 🐈
-dog: 🐕
-py: 🐍
-surp: 😲
+# unimported key combos go here
+# combos:
+#   test: 😂

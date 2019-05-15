@@ -1,12 +1,22 @@
+# Config file created with compose_key_config by elsholz
+# GitHub: https://github.com/elsholz/compose_key_config.git
+
+Marks
 <Multi_key> <c> <h> <e> <c> <k> : "✓" 
 <Multi_key> <c> <r> <s> : "×" 
+
+Arrows
 <Multi_key> <a> <u> <p> : "↑" 
 <Multi_key> <a> <d> <o> <w> <n> : "↓" 
+
+Number Symbols
 <Multi_key> <n> <n> : "ℕ" 
 <Multi_key> <w> <n> : "ℤ" 
 <Multi_key> <r> <e> <a> <l> : "ℝ" 
 <Multi_key> <c> <n> : "ℂ" 
 <Multi_key> <r> <a> <t> : "ℚ" 
+
+Greek Letters
 <Multi_key> <a> <l> : "α" 
 <Multi_key> <b> <e> <t> : "β" 
 <Multi_key> <g> <a> <m> : "γ" 
@@ -26,6 +36,8 @@
 <Multi_key> <e> <p> <s> : "Ɛ" 
 <Multi_key> <p> <h> <i> : "φ" 
 <Multi_key> <P> <H> <I> : "Φ" 
+
+Symbols for Logic Class
 <Multi_key> <p> <m> : "±" 
 <Multi_key> <s> <q> <r> <t> : "√" 
 <Multi_key> <e> <x> <q> : "∃" 
@@ -47,6 +59,8 @@
 <Multi_key> <i> <n> <e> : "∉" 
 <Multi_key> <t> <s> <u> <b> : "⊂" 
 <Multi_key> <p> <r> <o> <p> : "φ" 
+
+Emojis
 <Multi_key> <f> <i> <r> <e> : "🔥" 
 <Multi_key> <j> <o> <y> : "😂" 
 <Multi_key> <g> <l> <a> <d> : "😊" 
@@ -61,3 +75,7 @@
 <Multi_key> <d> <o> <g> : "🐕" 
 <Multi_key> <p> <y> : "🐍" 
 <Multi_key> <s> <u> <r> <p> : "😲" 
+<Multi_key> <f> <p> <a> <l> <m> : "🤦" 
+<Multi_key> <w> <i> <n> <k> : "😉" 
+<Multi_key> <t> <r> <e> <a> <s> : "💰" 
+

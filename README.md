@@ -1,13 +1,20 @@
 # Compose Key Config
 This git repository contains my compose key file and will later contain a small Python script for generating this file dynamically.
 
-To use the compose key configuration do the following:
-1. Configure the compose key on your system
+#### To use the compose key configuration do the following:
+1. Configure the compose key on your system (requires X)
 2. Run the following command: <br>
 `user@device:~$ cp <path>/<to>/<repo>/.XCompose ~/`<br>
-This will copy the config file to your home directory. If you made a config file earlier, be sure to back it up, as it will be overwritten.
-<br>Alternatively you can also just execute `make_config.py` and it generates and replaces (or creates) `~/.XCompose` automatically. `make_config.py` can also write the config to stdout, use the `--stdout` option for that, or `-s` for short.    
+This will copy the default config file to your home directory. If you made a config file earlier, be sure to back it up, as it will be overwritten. See the options below for
+
 3. Log off and log in again, have fun!
+
+#### Options
+`user@device:~$ python make_config.py [options]`
+
+- `-s` or `--stdout`: emits output to stdout (e.g. terminal)
+- `-nr` or `--no-readme`: Skips creation of README.md
+- `-sl` or `--save-locally`: Config is saved locally (instead of in home directory)
 
 #### List of Key Combinations
 In the following, key combinations and their result will be presented. The symbols are separated into categories that roughly match their use cases.
@@ -18,11 +25,13 @@ In the following, key combinations and their result will be presented. The symbo
 |---|---|
 | \<c\> \<h\> \<e\> \<c\> \<k\> | ✓ | 
 | \<c\> \<r\> \<s\> | × | 
+
 ### Arrows
 |Combination|Result|
 |---|---|
 | \<a\> \<u\> \<p\> | ↑ | 
 | \<a\> \<d\> \<o\> \<w\> \<n\> | ↓ | 
+
 ### Number Symbols
 |Combination|Result|
 |---|---|
@@ -31,6 +40,7 @@ In the following, key combinations and their result will be presented. The symbo
 | \<r\> \<e\> \<a\> \<l\> | ℝ | 
 | \<c\> \<n\> | ℂ | 
 | \<r\> \<a\> \<t\> | ℚ | 
+
 ### Greek Letters
 |Combination|Result|
 |---|---|
@@ -53,6 +63,7 @@ In the following, key combinations and their result will be presented. The symbo
 | \<e\> \<p\> \<s\> | Ɛ | 
 | \<p\> \<h\> \<i\> | φ | 
 | \<P\> \<H\> \<I\> | Φ | 
+
 ### Symbols for Logic Class
 |Combination|Result|
 |---|---|
@@ -77,6 +88,7 @@ In the following, key combinations and their result will be presented. The symbo
 | \<i\> \<n\> \<e\> | ∉ | 
 | \<t\> \<s\> \<u\> \<b\> | ⊂ | 
 | \<p\> \<r\> \<o\> \<p\> | φ | 
+
 ### Emojis
 |Combination|Result|
 |---|---|
@@ -94,4 +106,22 @@ In the following, key combinations and their result will be presented. The symbo
 | \<d\> \<o\> \<g\> | 🐕 | 
 | \<p\> \<y\> | 🐍 | 
 | \<s\> \<u\> \<r\> \<p\> | 😲 | 
+| \<f\> \<p\> \<a\> \<l\> \<m\> | 🤦 | 
+| \<w\> \<i\> \<n\> \<k\> | 😉 | 
+| \<t\> \<r\> \<e\> \<a\> \<s\> | 💰 | 
 
+
+#### Split Compose Key Config into multiple Files for easy editing
+To make life easier, the compose keys are now split up into separate files. To enable a file of compose keys, add it to the `include` list in the `keys.yaml` file.
+
+Example:
+To remove compose keys for Greek letters, comment out the file for greek letters like so: <br>
+```yaml
+- include:
+    …
+    - number_symbols
+    # - greek_letters
+    - logic_class
+    …
+ ```
+ The next time you run ```python ./make_config.py``` those letters will be excluded
