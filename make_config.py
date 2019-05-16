@@ -2,7 +2,7 @@ import pathlib
 from ruamel.yaml import YAML
 import sys
 import os
-from generate_readme import generate_readme
+from gen_readme.generate_readme import generate_readme
 
 yaml = YAML()
 
