@@ -4,6 +4,7 @@ import sys
 import os
 from gen_readme.generate_readme import generate_readme
 
+
 yaml = YAML()
 
 
@@ -46,7 +47,7 @@ key_combos = extract_key_combos('keys')
 conf_lines = []
 
 for title, keys in key_combos.items():
-    conf_lines.append(title)
+    conf_lines.append('# ' + title)
     for (key_combo, output_key) in keys:
         if len(key_combo) == 1:
             # TODO: Check if this works

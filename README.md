@@ -50,8 +50,8 @@ In the following, key combinations and their result will be presented. The symbo
 | \<G\> \<A\> \<M\> | Γ | 
 | \<l\> \<a\> \<m\> | λ | 
 | \<L\> \<A\> \<M\> | Λ | 
-| \<t\> \<h\> \<e\> \<t\> | θ | 
-| \<T\> \<H\> \<E\> \<T\> | Θ | 
+| \<g\> \<t\> \<h\> | θ | 
+| \<G\> \<T\> \<H\> | Θ | 
 | \<o\> \<m\> | ω | 
 | \<O\> \<M\> | Ω | 
 | \<d\> \<e\> \<l\> | δ | 
