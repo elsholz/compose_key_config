@@ -1,30 +1,30 @@
 # Config file created with compose_key_config by elsholz
 # GitHub: https://github.com/elsholz/compose_key_config.git
 
-Marks
+# Marks
 <Multi_key> <c> <h> <e> <c> <k> : "✓" 
 <Multi_key> <c> <r> <s> : "×" 
 
-Arrows
+# Arrows
 <Multi_key> <a> <u> <p> : "↑" 
 <Multi_key> <a> <d> <o> <w> <n> : "↓" 
 
-Number Symbols
+# Number Symbols
 <Multi_key> <n> <n> : "ℕ" 
 <Multi_key> <w> <n> : "ℤ" 
 <Multi_key> <r> <e> <a> <l> : "ℝ" 
 <Multi_key> <c> <n> : "ℂ" 
 <Multi_key> <r> <a> <t> : "ℚ" 
 
-Greek Letters
+# Greek Letters
 <Multi_key> <a> <l> : "α" 
 <Multi_key> <b> <e> <t> : "β" 
 <Multi_key> <g> <a> <m> : "γ" 
 <Multi_key> <G> <A> <M> : "Γ" 
 <Multi_key> <l> <a> <m> : "λ" 
 <Multi_key> <L> <A> <M> : "Λ" 
-<Multi_key> <t> <h> <e> <t> : "θ" 
-<Multi_key> <T> <H> <E> <T> : "Θ" 
+<Multi_key> <g> <t> <h> : "θ" 
+<Multi_key> <G> <T> <H> : "Θ" 
 <Multi_key> <o> <m> : "ω" 
 <Multi_key> <O> <M> : "Ω" 
 <Multi_key> <d> <e> <l> : "δ" 
@@ -37,7 +37,7 @@ Greek Letters
 <Multi_key> <p> <h> <i> : "φ" 
 <Multi_key> <P> <H> <I> : "Φ" 
 
-Symbols for Logic Class
+# Symbols for Logic Class
 <Multi_key> <p> <m> : "±" 
 <Multi_key> <s> <q> <r> <t> : "√" 
 <Multi_key> <e> <x> <q> : "∃" 
@@ -60,7 +60,7 @@ Symbols for Logic Class
 <Multi_key> <t> <s> <u> <b> : "⊂" 
 <Multi_key> <p> <r> <o> <p> : "φ" 
 
-Emojis
+# Emojis
 <Multi_key> <f> <i> <r> <e> : "🔥" 
 <Multi_key> <j> <o> <y> : "😂" 
 <Multi_key> <g> <l> <a> <d> : "😊" 
@@ -78,4 +78,9 @@ Emojis
 <Multi_key> <f> <p> <a> <l> <m> : "🤦" 
 <Multi_key> <w> <i> <n> <k> : "😉" 
 <Multi_key> <t> <r> <e> <a> <s> : "💰" 
+
+# Math Symbols
+<Multi_key> <l> <e> <q> : "≤" 
+<Multi_key> <m> <e> <q> : "≥" 
+<Multi_key> <i> <n> <f> : "∞" 
 
