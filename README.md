@@ -110,6 +110,13 @@ In the following, key combinations and their result will be presented. The symbo
 | \<w\> \<i\> \<n\> \<k\> | 😉 | 
 | \<t\> \<r\> \<e\> \<a\> \<s\> | 💰 | 
 
+### Math Symbols
+|Combination|Result|
+|---|---|
+| \<l\> \<e\> \<q\> | ≤ | 
+| \<m\> \<e\> \<q\> | ≥ | 
+| \<i\> \<n\> \<f\> | ∞ | 
+
 
 #### Split Compose Key Config into multiple Files for easy editing
 To make life easier, the compose keys are now split up into separate files. To enable a file of compose keys, add it to the `include` list in the `keys.yaml` file.

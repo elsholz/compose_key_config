@@ -13,3 +13,6 @@ To remove compose keys for Greek letters, comment out the file for greek letters
     …
  ```
  The next time you run ```python ./make_config.py``` those letters will be excluded
+ 
+ #### Help with this project
+-If you want to commit to this repo, just run ```bash prepare_for_commit.sh``` to generate the new .XCompose file and the new README.md.
