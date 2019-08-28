@@ -3,9 +3,28 @@ from ruamel.yaml import YAML
 import sys
 import os
 from gen_readme.generate_readme import generate_readme
-
+from UnionTrie import UnionTrie
+from colorama import ansi
 
 yaml = YAML()
+
+
+class CollisionCheck:
+    def __init__(self):
+        self.trie = UnionTrie()
+
+    def collides(self, value, route):
+        try:
+            self.trie.insert(value, route)
+        except UnionTrie.InsertionError as e:
+            return True
+
+        return False
+
+
+collision_check = CollisionCheck()
+
+global_compose_file = open('/usr/share/X11/locale/en_US.UTF-8/Compose')
 
 
 def extract_key_combos(file_path):
@@ -14,18 +33,33 @@ def extract_key_combos(file_path):
         r = yaml.load(fin)
     last_title = ''
     collected_lines = []
+    # TODO: Collision checking with UnionTries.
     if r:
         for k in r:
+            # Check if a new title is being introduced. The lines following after that will belong to that title
             if k == 'title':
                 if not last_title == '':
                     res.update({r[k]: collected_lines})
                 last_title = r[k]
+            # Check of combinations are being specified
             elif k == 'combos':
                 for combo in r[k]:
                     collected_lines.append((combo, r[k][combo]))
             elif k == 'include':
                 for fp in r[k]:
-                    res.update(extract_key_combos(fp))
+
+                    for title, routed_values in extract_key_combos(fp).items():
+                        for route, val in routed_values:
+                            if not collision_check.collides(val, route):
+                                tuple_list = res.get(title, [])
+                                tuple_list.append((route, val))
+                                res.update({title: tuple_list})
+                            else:
+                                print(f'{ansi.Fore.RED}Collision!{ansi.Fore.CYAN} The Key Combo'
+                                      f' {route} is already mapped to the following character '
+                                      f'or sub trie: {str(collision_check.trie[route])}{ansi.Fore.RESET}')
+                    # print(res)
+                    # res.update(extract_key_combos(fp))
             else:
                 if last_title == '':
                     # take last part of path, as filename is used as title is no other title is specified, which
@@ -45,6 +79,14 @@ def extract_key_combos(file_path):
 
 key_combos = extract_key_combos('keys')
 conf_lines = []
+
+
+def global_collision_check(file_content):
+    # TODO
+    pass
+
+
+global_collision_check(file_content=global_compose_file.read())
 
 for title, keys in key_combos.items():
     conf_lines.append('# ' + title)

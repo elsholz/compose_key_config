@@ -110,6 +110,7 @@ In the following, key combinations and their result will be presented. The symbo
 | \<w\> \<i\> \<n\> \<k\> | 😉 | 
 | \<t\> \<r\> \<e\> \<a\> \<s\> | 💰 | 
 | \<t\> \<u\> \<p\> | 👍 | 
+| \<c\> \<a\> \<k\> \<e\> | 🎂 | 
 
 ### Math Symbols
 |Combination|Result|

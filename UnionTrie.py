@@ -21,6 +21,9 @@ class UnionTrie:
         or get overwritten.
     """
 
+    class InsertionError(ValueError):
+        pass
+
     def __init__(self, value=None):
         """Create empty node with an empty list of sub nodes."""
         self.sub_nodes = None
@@ -32,7 +35,7 @@ class UnionTrie:
             self.sub_nodes = {}
 
     def insert(self, value, route):
-        ve = ValueError('Value can\'t be inserted!')
+        ve = UnionTrie.InsertionError('Value can\'t be inserted!')
         if self.value is not None:
             raise ve
 
@@ -49,9 +52,40 @@ class UnionTrie:
     def __str__(self):
         if self.sub_nodes:
             # return [f'{k}: {str(v)}' for k, v in self.sub_nodes.items()]
-            return 'UnionTree(sub_nodes=' + ', '.join([str({'"'+k+'"': str(v)}) for k, v in self.sub_nodes.items()]).replace(
+            return 'UnionTree(sub_nodes=' + ', '.join(
+                [str({'"' + k + '"': str(v)}) for k, v in self.sub_nodes.items()]).replace(
                 '\'', "") + ')'
         elif self.value:
             return 'UnionTree(value=' + str(self.value) + ')'
         else:
             return 'UnionTrie()'
+
+    def flatten(self):
+        """Turns a UnionTrie and its SubTries into a dictionary"""
+        if self.value:
+            return {'': self.value}
+        elif self.sub_nodes:
+            return {next_char + (sub_route if not self.sub_nodes[next_char].value else ''): val
+                    for next_char in self.sub_nodes.keys()
+                    for sub_route, val in self.sub_nodes[next_char].flatten().items()
+                    }
+        else:
+            return dict()
+
+    def __getitem__(self, item):
+        if item == '':
+            if self.value:
+                return self.value
+            elif self.sub_nodes:
+                return self
+            else:
+                raise KeyError()
+        else:
+            return self.sub_nodes[item[0]][item[1:]]
+
+# test_a = UnionTrie()
+# test_a.insert(value='Tom', route='Uli')
+# test_a.insert(value='Lucas', route='Antje')
+# test_a.insert(value='Lucas 3 in Sport', route='An')
+# print(test_a)
+# print(test_a.flatten())
