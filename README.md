@@ -118,6 +118,8 @@ In the following, key combinations and their result will be presented. The symbo
 | \<l\> \<e\> \<q\> | ≤ | 
 | \<m\> \<e\> \<q\> | ≥ | 
 | \<i\> \<n\> \<f\> | ∞ | 
+| \<n\> \<e\> \<q\> | ≠ | 
+| \<a\> \<e\> \<q\> | ≈ | 
 
 
 #### Split Compose Key Config into multiple Files for easy editing
