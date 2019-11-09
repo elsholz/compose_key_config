@@ -108,7 +108,7 @@ save_locally = any(x in sys.argv for x in '--save-locally, -sl'.split(', '))
 def format_lines(conf_lines):
     comment_lines = [
         '# Config file created with compose_key_config by elsholz',
-        '# GitHub: https://github.com/elsholz/compose_key_config.git',
+        '# GitHub: https://github.com/elsholz/compose_key_config',
         ''
     ]
 

@@ -40,6 +40,8 @@ In the following, key combinations and their result will be presented. The symbo
 | \<r\> \<e\> \<a\> \<l\> | ℝ | 
 | \<c\> \<n\> | ℂ | 
 | \<r\> \<a\> \<t\> | ℚ | 
+| \<q\> \<u\> \<a\> \<t\> | ℍ | 
+| \<c\> \<a\> \<r\> \<d\> | ℵ | 
 
 ### Greek Letters
 |Combination|Result|
@@ -120,6 +122,7 @@ In the following, key combinations and their result will be presented. The symbo
 | \<i\> \<n\> \<f\> | ∞ | 
 | \<n\> \<e\> \<q\> | ≠ | 
 | \<a\> \<e\> \<q\> | ≈ | 
+| \<f\> \<t\> | ℱ | 
 
 
 #### Split Compose Key Config into multiple Files for easy editing

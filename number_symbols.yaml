@@ -5,3 +5,5 @@ combos:
   real: ℝ
   cn: ℂ
   rat: ℚ
+  quat: ℍ
+  card: ℵ

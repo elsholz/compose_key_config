@@ -1,5 +1,5 @@
 # Config file created with compose_key_config by elsholz
-# GitHub: https://github.com/elsholz/compose_key_config.git
+# GitHub: https://github.com/elsholz/compose_key_config
 
 # Marks
 <Multi_key> <c> <h> <e> <c> <k> : "✓" 
@@ -15,6 +15,8 @@
 <Multi_key> <r> <e> <a> <l> : "ℝ" 
 <Multi_key> <c> <n> : "ℂ" 
 <Multi_key> <r> <a> <t> : "ℚ" 
+<Multi_key> <q> <u> <a> <t> : "ℍ" 
+<Multi_key> <c> <a> <r> <d> : "ℵ" 
 
 # Greek Letters
 <Multi_key> <a> <l> : "α" 
@@ -79,9 +81,13 @@
 <Multi_key> <w> <i> <n> <k> : "😉" 
 <Multi_key> <t> <r> <e> <a> <s> : "💰" 
 <Multi_key> <t> <u> <p> : "👍" 
+<Multi_key> <c> <a> <k> <e> : "🎂" 
 
 # Math Symbols
 <Multi_key> <l> <e> <q> : "≤" 
 <Multi_key> <m> <e> <q> : "≥" 
 <Multi_key> <i> <n> <f> : "∞" 
+<Multi_key> <n> <e> <q> : "≠" 
+<Multi_key> <a> <e> <q> : "≈" 
+<Multi_key> <f> <t> : "ℱ" 
 
