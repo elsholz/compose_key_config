@@ -7,6 +7,7 @@ include:
   - logic_class
   - emojis
   - math_symbols
+  - math_font
 
 # unimported key combos go here
 # combos:

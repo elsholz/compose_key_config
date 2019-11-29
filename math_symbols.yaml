@@ -6,3 +6,5 @@ combos:
   neq: ≠
   aeq: ≈
   ft: ℱ
+  id: ≡
+  nid: ≢
